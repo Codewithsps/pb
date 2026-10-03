@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gallery | Shri Pauhari Baba Temple, Saraiya Ratnave, Azamgarh</title>
+    <meta name="description"
+        content="Photos of Shri Pauhari Baba Temple in Saraiya Ratnave, Azamgarh: the temple, the water, festivals and evenings of prayer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Hanken Grotesk"', 'sans-serif'] }, colors: { ink: '#0a2b27', pill: '#00302c', sun: '#f9c85f', brand: '#004741', cream: '#f0ede4' } } } }
+    </script>
+    <style>
+        
+
+        
+
+        @media (prefers-reduced-motion:reduce) {
+            
+
+            .slide {
+                transition: none !important
+            }
+        }
+
+        
+
+        .slide {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease, visibility .5s
+        }
+
+        .slide.on {
+            opacity: 1;
+            visibility: visible
+        }
+
+        #thumbs {
+            scrollbar-width: none
+        }
+
+        #thumbs::-webkit-scrollbar {
+            display: none
+        }
+
+        .lbtn {
+            display: grid;
+            height: 48px;
+            width: 48px;
+            place-items: center;
+            border-radius: 9999px;
+            color: #fff;
+            transition: background .2s
+        }
+
+        .lbtn:hover {
+            background: rgba(255, 255, 255, .15)
+        }
+
+        .lnav {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            display: grid;
+            height: 48px;
+            width: 48px;
+            transform: translateY(-50%);
+            place-items: center;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, .12);
+            font-size: 22px;
+            color: #fff;
+            transition: background .2s
+        }
+
+        .lnav:hover {
+            background: #f9c85f;
+            color: #0a2b27
+        }
+
+        .lbtn:focus-visible,
+        .lnav:focus-visible {
+            outline: 2px solid #f9c85f;
+            outline-offset: 2px
+        }
+
+        .ph {
+            background: linear-gradient(160deg, #0b5d54, #00302c)
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="bg-[#004741] font-sans text-white antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <div class="fixed inset-x-0 top-4 z-50 px-2 sm:top-6 sm:px-3">
+        <div class="mx-auto max-w-6xl px-5 sm:px-8">
+            <div class="w-full rounded-[28px] bg-pill/95 text-[#f0ede4] shadow-2xl backdrop-blur-md lg:rounded-full">
+                <div class="flex items-center justify-between gap-3 px-3 py-2.5 lg:px-4">
+                    <a href="index.html" class="flex items-center gap-2.5 font-display"
+                        aria-label="Shri Pauhari Baba Temple, home">
+                        <span class="grid h-10 w-10 place-items-center rounded-xl bg-sun text-ink">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2l1 2.4c1.4.4 2.4 1.7 2.4 3.2 0 .6-.2 1.2-.5 1.7l2.6 1.3-.5 1.4H16l1 2.5H7l1-2.5h-.5L7 11.6l2.6-1.3c-.3-.5-.5-1.1-.5-1.7 0-1.5 1-2.8 2.4-3.2z" />
+                                <path d="M4 16h16v2H4zM2 19h20v2H2z" />
+                            </svg>
+                        </span>
+                        <span class="text-xl font-bold leading-none">SPBT</span>
+                    </a>
+                    <ul id="links" class="hidden items-center gap-1 text-[15px] lg:flex"></ul>
+                    <a href="plan-a-visit.html"
+                        class="hidden items-center gap-3 rounded-full bg-sun py-1 pl-6 pr-1 font-semibold text-ink transition hover:bg-[#ffd873] lg:inline-flex">
+                        Plan a visit<span
+                            class="grid h-9 w-9 place-items-center rounded-full bg-[#fff6dc] text-lg">→</span>
+                    </a>
+                    <button id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"
+                        class="burger text-[#f0ede4] lg:hidden"><i></i><i></i><i></i></button>
+                </div>
+                <div id="menu" class="hidden px-5 pb-5 lg:hidden">
+                    <ul id="mlinks"></ul>
+                    <a href="plan-a-visit.html"
+                        class="mt-3 flex items-center justify-between rounded-full bg-sun py-1 pl-8 pr-1 text-lg font-semibold text-ink">
+                        <span>Plan a visit</span><span
+                            class="grid h-11 w-11 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <main class="p-2 sm:p-3">
+        <section class="relative isolate overflow-hidden rounded-[28px]" aria-label="Gallery">
+            <div class="absolute inset-0 -z-20" style="background:linear-gradient(170deg,#9a7b4f,#8b5e3c 50%,#3a2515)">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-[#00201d]/90 via-[#00201d]/35 to-[#00201d]/25">
+            </div>
+            <div class="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-black/35 to-transparent"></div>
+            <div class="mx-auto max-w-6xl px-5 pb-12 pt-36 sm:px-8 sm:pb-16 sm:pt-44">
+                <p class="rise text-sm font-medium uppercase tracking-[.14em] text-white/70"
+                    style="animation-delay:.1s">Gallery</p>
+                <h1 class="rise mt-3 max-w-3xl font-display text-[clamp(2.1rem,6vw,4.5rem)] font-bold leading-[.97] tracking-[-.03em]"
+                    style="animation-delay:.25s">The temple in pictures</h1>
+                <p class="rise mt-5 max-w-lg text-base leading-relaxed text-white/85 sm:text-lg"
+                    style="animation-delay:.4s">Evenings by the water, festival lights and quiet moments in Saraiya
+                    Ratnave.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= GALLERY GRID ================= -->
+    <section id="gallery" class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="galTitle">
+        <div class="rounded-[28px] bg-[#00352f] text-[#f0ede4]">
+            <div class="mx-auto max-w-6xl px-8 py-16 sm:px-11 sm:py-24 lg:px-12">
+                <h2 id="galTitle"
+                    class="font-display text-[clamp(2.2rem,5vw,3.6rem)] font-bold leading-[1.02] tracking-[-.025em]">
+                    Moments at the temple</h2>
+                <p class="mt-4 max-w-md text-lg leading-relaxed text-[#aac4be]">Tap any photo to view it full screen.
+                </p>
+                <div id="grid" class="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div id="lb" class="fixed inset-0 z-[60] hidden bg-black/95" role="dialog" aria-modal="true"
+        aria-label="Photo viewer">
+        <div class="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-4 py-3 text-white">
+            <p class="text-base font-medium"><span id="lbCur"></span> / <span id="lbTot"></span></p>
+            <div class="flex items-center gap-1">
+                <button id="lbZoom" type="button" aria-label="Zoom in" aria-pressed="false" class="lbtn"><svg
+                        viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="M20 20l-4-4M11 8v6M8 11h6" />
+                    </svg></button>
+                <button id="lbPlay" type="button" aria-label="Start slideshow" class="lbtn"><svg id="icPlay"
+                        viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+                        <path d="M7 5l12 7-12 7z" />
+                    </svg><svg id="icPause" viewBox="0 0 24 24" class="hidden h-6 w-6" fill="currentColor"
+                        aria-hidden="true">
+                        <path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+                    </svg></button>
+                <a id="lbDl" href="#" download aria-label="Download photo" class="lbtn"><svg viewBox="0 0 24 24"
+                        class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 4v11M7 11l5 5 5-5M5 20h14" />
+                    </svg></a>
+                <button id="lbClose" type="button" aria-label="Close" class="lbtn"><svg viewBox="0 0 24 24"
+                        class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        aria-hidden="true">
+                        <path d="M5 5l14 14M19 5L5 19" />
+                    </svg></button>
+            </div>
+        </div>
+        <button id="lbPrev" type="button" aria-label="Previous photo" class="lnav left-2 sm:left-4">←</button>
+        <button id="lbNext" type="button" aria-label="Next photo" class="lnav right-2 sm:right-4">→</button>
+        <div id="lbStage"
+            class="absolute inset-x-0 bottom-16 top-16 flex touch-pan-y items-center justify-center overflow-hidden px-14 sm:px-20">
+            <img id="lbImg" src="" alt=""
+                class="max-h-full max-w-full cursor-zoom-in select-none object-contain transition-transform duration-200"
+                draggable="false">
+        </div>
+        <p id="lbCap" class="absolute inset-x-0 bottom-0 px-16 pb-5 pt-3 text-center text-base text-white sm:text-lg"
+            aria-live="polite"></p>
+    </div>
+
+    <!-- ================= CTA ================= -->
+    <section class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="ctaTitle">
+        <div class="rounded-[28px] bg-[#f0ede4] text-ink">
+            <div class="mx-auto max-w-3xl px-8 py-16 text-center sm:px-11 sm:py-24">
+                <h2 id="ctaTitle"
+                    class="font-display text-[clamp(2.2rem,5vw,3.6rem)] font-bold leading-[1.02] tracking-[-.025em]">
+                    Pictures are only the start</h2>
+                <p class="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-[#2b4541]">Visit the temple in person. We
+                    are open daily, 6 AM to 8 PM.</p>
+                <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                    <a href="plan-a-visit.html"
+                        class="inline-flex items-center gap-3 rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]">Plan
+                        a visit<span
+                            class="grid h-11 w-11 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span></a>
+                    <a href="contact.html"
+                        class="rounded-full border-2 border-ink/80 px-8 py-3 text-lg font-semibold transition hover:bg-ink/5">Contact
+                        us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="p-2 pt-0 sm:p-3 sm:pt-0">
+        <div class="relative overflow-hidden rounded-[28px] bg-[#002b27] text-[#f0ede4]">
+            <div class="relative z-10 mx-auto max-w-6xl px-8 pt-14 sm:px-11 lg:px-12 sm:pt-20">
+                <div class="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4">
+                    <div>
+                        <a href="index.html" class="flex items-center gap-2.5 font-display"
+                            aria-label="Shri Pauhari Baba Temple, home">
+                            <span class="grid h-10 w-10 place-items-center rounded-xl bg-sun text-ink"><svg
+                                    viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 2l1 2.4c1.4.4 2.4 1.7 2.4 3.2 0 .6-.2 1.2-.5 1.7l2.6 1.3-.5 1.4H16l1 2.5H7l1-2.5h-.5L7 11.6l2.6-1.3c-.3-.5-.5-1.1-.5-1.7 0-1.5 1-2.8 2.4-3.2z" />
+                                    <path d="M4 16h16v2H4zM2 19h20v2H2z" />
+                                </svg></span>
+                            <span class="text-2xl font-bold">Pauhari Baba</span>
+                        </a>
+                        <p class="mt-5 max-w-xs leading-relaxed text-[#9dbab4]">A peaceful place of prayer in Saraiya
+                            Ratnave, Azamgarh. Open to every devotee.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Explore</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="about.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">About
+                                    us</a></li>
+                            <li><a href="gallery.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Gallery</a>
+                            </li>
+                            <li><a href="contribute.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Contribute</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Company</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="plan-a-visit.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Plan
+                                    a visit</a></li>
+                            <li><a href="volunteer.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Volunteer</a>
+                            </li>
+                            <li><a href="privacy.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Talk to us</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="https://wa.me/918858732885"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">WhatsApp</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100033850125964"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">Facebook</a></li>
+                            <li><a href="https://instagram.com/shri_baba_pouhari"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/c/ShriPauhariBaba"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="mt-14 flex flex-col gap-2 border-t border-white/10 pt-6 text-[15px] text-[#9dbab4] sm:flex-row sm:justify-between">
+                    <p>© <span id="yr">2026</span> Shri Pauhari Baba Temple. All rights reserved.</p>
+                    <p>Open daily, 6 AM to 8 PM</p>
+                </div>
+            </div>
+            <p aria-hidden="true"
+                class="pointer-events-none mt-6 select-none whitespace-nowrap text-center font-display text-[clamp(3.2rem,14.5vw,13rem)] font-bold leading-[.8] tracking-[-.04em] text-white/[.06] translate-y-[14%]">
+                Pauhari Baba</p>
+        </div>
+    </footer>
+
+    <script>
+        const $ = id => document.getElementById(id);
+        $('yr').textContent = new Date().getFullYear();
+
+        /* ---------- Gallery + lightbox ---------- */
+        /* Edit this list: src = image path, alt = description, cap = caption shown in the viewer */
+        const PHOTOS = [
+            { src: 'img/diwali-diya.jpg', alt: 'Temple lit with colourful lights, reflected in the water at night', cap: 'Diwali 2024 [ Photo by MP Singh ]' },
+            { src: 'img/diya.jpg', alt: 'The temple across the water at dusk', cap: 'Dusk by the water' },
+            { src: 'img/dipwali-less.jpeg', alt: 'Add a description of this photo', cap: 'Add a caption' },
+            // { src: 'img/diwali-diya.jpg', alt: 'Add a description of this photo', cap: 'Add a caption' },
+            // { src: 'img/diwali-diya.jpg', alt: 'Add a description of this photo', cap: 'Add a caption' },
+            // { src: 'img/diwali-diya.jpg', alt: 'Add a description of this photo', cap: 'Add a caption' }
+        ];
+        const SLIDE_MS = 3000;
+        const grid = $('grid'), lb = $('lb'), img = $('lbImg'), stage = $('lbStage');
+        let i = 0, zoomed = false, timer = null, opener = null;
+
+        grid.innerHTML = PHOTOS.map((p, n) => `<button type="button" data-n="${n}" aria-label="Open photo ${n + 1}: ${p.cap}" class="ph group relative aspect-[4/3] overflow-hidden rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sun"><img src="${p.src}" alt="${p.alt}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" onerror="this.style.display='none'"><span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-4 pb-3 pt-8 text-left text-sm text-white opacity-0 transition group-hover:opacity-100 group-focus-visible:opacity-100">${p.cap}</span></button>`).join('');
+        $('lbTot').textContent = PHOTOS.length;
+
+        function setZoom(on, e) {
+            zoomed = on;
+            if (on && e) { const r = img.getBoundingClientRect(); img.style.transformOrigin = `${(e.clientX - r.left) / r.width * 100}% ${(e.clientY - r.top) / r.height * 100}%` }
+            else if (on) img.style.transformOrigin = 'center';
+            img.style.transform = on ? 'scale(2)' : 'none';
+            img.classList.toggle('cursor-zoom-in', !on); img.classList.toggle('cursor-zoom-out', on);
+            $('lbZoom').setAttribute('aria-pressed', on); $('lbZoom').setAttribute('aria-label', on ? 'Zoom out' : 'Zoom in');
+        }
+        function show(n) {
+            i = (n + PHOTOS.length) % PHOTOS.length;
+            const p = PHOTOS[i];
+            setZoom(false);
+            img.src = p.src; img.alt = p.alt; img.style.visibility = 'visible';
+            $('lbCap').textContent = p.cap; $('lbCur').textContent = i + 1;
+            $('lbDl').href = p.src; $('lbDl').setAttribute('download', p.src.split('/').pop());
+            new Image().src = PHOTOS[(i + 1) % PHOTOS.length].src; /* preload next */
+        }
+        function play(on) {
+            clearInterval(timer); timer = null;
+            if (on) timer = setInterval(() => show(i + 1), SLIDE_MS);
+            $('icPlay').classList.toggle('hidden', on); $('icPause').classList.toggle('hidden', !on);
+            $('lbPlay').setAttribute('aria-label', on ? 'Pause slideshow' : 'Start slideshow');
+        }
+        function openLb(n) {
+            opener = document.activeElement;
+            lb.classList.remove('hidden'); document.body.style.overflow = 'hidden';
+            show(n); $('lbClose').focus();
+        }
+        function closeLb() {
+            play(false); setZoom(false);
+            lb.classList.add('hidden'); document.body.style.overflow = '';
+            opener && opener.focus();
+        }
+        const step = d => { show(i + d); if (timer) play(true) }; /* restart slideshow timer after manual move */
+
+        grid.onclick = e => { const b = e.target.closest('button'); if (b) openLb(+b.dataset.n) };
+        $('lbPrev').onclick = () => step(-1);
+        $('lbNext').onclick = () => step(1);
+        $('lbClose').onclick = closeLb;
+        $('lbPlay').onclick = () => play(!timer);
+        $('lbZoom').onclick = () => setZoom(!zoomed);
+        img.onclick = e => setZoom(!zoomed, e);
+        img.onerror = () => { img.style.visibility = 'hidden' };
+        stage.onclick = e => { if (e.target === stage) closeLb() };
+        addEventListener('keydown', e => {
+            if (lb.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLb();
+            if (e.key === 'ArrowLeft') step(-1);
+            if (e.key === 'ArrowRight') step(1);
+            if (e.key === 'Tab') { /* keep focus inside the viewer */
+                const f = [...lb.querySelectorAll('button,a')].filter(x => x.offsetParent !== null);
+                const first = f[0], last = f[f.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+            }
+        });
+        let sx = null;
+        stage.addEventListener('pointerdown', e => { sx = e.clientX });
+        stage.addEventListener('pointerup', e => {
+            if (sx === null) return;
+            const dx = e.clientX - sx; sx = null;
+            if (!zoomed && Math.abs(dx) > 60) step(dx < 0 ? 1 : -1);
+        });
+        stage.addEventListener('pointercancel', () => { sx = null });
+    </script>
+</body>
+
+</html>

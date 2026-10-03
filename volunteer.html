@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Volunteer | Shri Pauhari Baba Temple, Saraiya Ratnave, Azamgarh</title>
+    <meta name="description"
+        content="Volunteer at Shri Pauhari Baba Temple in Saraiya Ratnave, Azamgarh. See the ways you can help and sign up on WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Hanken Grotesk"', 'sans-serif'] }, colors: { ink: '#0a2b27', pill: '#00302c', sun: '#f9c85f', brand: '#004741', cream: '#f0ede4' } } } }
+    </script>
+    <style>
+        
+
+        
+
+        
+
+        
+
+        select option {
+            color: #0a2b27
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body class="bg-[#004741] font-sans text-white antialiased">
+
+    <!-- ================= NAVBAR ================= -->
+    <div class="fixed inset-x-0 top-4 z-50 px-2 sm:top-6 sm:px-3">
+        <div class="mx-auto max-w-6xl px-5 sm:px-8">
+            <div class="w-full rounded-[28px] bg-pill/95 text-[#f0ede4] shadow-2xl backdrop-blur-md lg:rounded-full">
+                <div class="flex items-center justify-between gap-3 px-3 py-2.5 lg:px-4">
+                    <a href="index.html" class="flex items-center gap-2.5 font-display"
+                        aria-label="Shri Pauhari Baba Temple, home">
+                        <span class="grid h-10 w-10 place-items-center rounded-xl bg-sun text-ink">
+                            <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 2l1 2.4c1.4.4 2.4 1.7 2.4 3.2 0 .6-.2 1.2-.5 1.7l2.6 1.3-.5 1.4H16l1 2.5H7l1-2.5h-.5L7 11.6l2.6-1.3c-.3-.5-.5-1.1-.5-1.7 0-1.5 1-2.8 2.4-3.2z" />
+                                <path d="M4 16h16v2H4zM2 19h20v2H2z" />
+                            </svg>
+                        </span>
+                        <span class="text-xl font-bold leading-none">SPBT</span>
+                    </a>
+                    <ul id="links" class="hidden items-center gap-1 text-[15px] lg:flex"></ul>
+                    <a href="plan-a-visit.html"
+                        class="hidden items-center gap-3 rounded-full bg-sun py-1 pl-6 pr-1 font-semibold text-ink transition hover:bg-[#ffd873] lg:inline-flex">
+                        Plan a visit<span
+                            class="grid h-9 w-9 place-items-center rounded-full bg-[#fff6dc] text-lg">→</span>
+                    </a>
+                    <button id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"
+                        class="burger text-[#f0ede4] lg:hidden"><i></i><i></i><i></i></button>
+                </div>
+                <div id="menu" class="hidden px-5 pb-5 lg:hidden">
+                    <ul id="mlinks"></ul>
+                    <a href="plan-a-visit.html"
+                        class="mt-3 flex items-center justify-between rounded-full bg-sun py-1 pl-8 pr-1 text-lg font-semibold text-ink">
+                        <span>Plan a visit</span><span
+                            class="grid h-11 w-11 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <main class="p-2 sm:p-3">
+        <section class="relative isolate overflow-hidden rounded-[28px]" aria-label="Volunteer">
+            <div class="absolute inset-0 -z-20" style="background:linear-gradient(170deg,#a8c78f,#4f7a45 50%,#1e3319)">
+            </div>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-[#00201d]/90 via-[#00201d]/35 to-[#00201d]/25">
+            </div>
+            <div class="absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-black/35 to-transparent"></div>
+            <div class="mx-auto max-w-6xl px-5 pb-12 pt-36 sm:px-8 sm:pb-16 sm:pt-44">
+                <p class="rise text-sm font-medium uppercase tracking-[.14em] text-white/70"
+                    style="animation-delay:.1s">Volunteer</p>
+                <h1 class="rise mt-3 max-w-3xl font-display text-[clamp(2.1rem,6vw,4.5rem)] font-bold leading-[.97] tracking-[-.03em]"
+                    style="animation-delay:.25s">Give your time to the temple</h1>
+                <p class="rise mt-5 max-w-lg text-base leading-relaxed text-white/85 sm:text-lg"
+                    style="animation-delay:.4s">Whether you have an hour a week or only come for festivals, there is a
+                    way to help. Pick a role below and tell us on WhatsApp.</p>
+                <a href="#signup"
+                    class="rise mt-8 inline-flex items-center gap-3 rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]"
+                    style="animation-delay:.55s">Sign up to volunteer<span
+                        class="grid h-11 w-11 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= WAYS TO VOLUNTEER ================= -->
+    <section id="roles" class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="rolesTitle">
+        <div class="rounded-[28px] bg-[#f0ede4] text-ink">
+            <div class="mx-auto max-w-6xl px-5 py-14 sm:px-11 sm:py-24 lg:px-12">
+                <div class="max-w-2xl">
+                    <h2 id="rolesTitle"
+                        class="font-display text-[clamp(2.2rem,5vw,3.6rem)] font-bold leading-[1.02] tracking-[-.025em]">
+                        Ways you can help</h2>
+                    <p class="mt-4 text-lg leading-relaxed text-[#2b4541]">Choose what suits you. No special skills
+                        needed for most roles.</p>
+                </div>
+                <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#4f7a45]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#004741]">Prayer seva</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Help set up for the morning and evening prayers
+                            and look after the prayer area.</p>
+                        <a href="#signup" data-role="Prayer seva"
+                            class="pick mt-5 inline-block font-semibold text-[#004741] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#d9873f]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#004741]">Festivals &amp; events</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Lend a hand with decoration, lighting, crowd
+                            guidance and arrangements on festival days.</p>
+                        <a href="#signup" data-role="Festivals and events"
+                            class="pick mt-5 inline-block font-semibold text-[#004741] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#2f8aa3]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#004741]">Cleanliness &amp; upkeep</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Keep the temple grounds, the water's edge and the
+                            paths clean and welcoming.</p>
+                        <a href="#signup" data-role="Cleanliness and upkeep"
+                            class="pick mt-5 inline-block font-semibold text-[#004741] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#b45a3c]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#7a3b2a]">Welcoming visitors</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Greet devotees, answer questions and guide
+                            first-time visitors and elders.</p>
+                        <a href="#signup" data-role="Welcoming visitors"
+                            class="pick mt-5 inline-block font-semibold text-[#7a3b2a] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#7a5ca8]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#53397e]">Photos &amp; video</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Capture prayers and festivals for the gallery and
+                            the temple's social pages.</p>
+                        <a href="#signup" data-role="Photos and video"
+                            class="pick mt-5 inline-block font-semibold text-[#53397e] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                    <article class="rounded-3xl bg-[#e3dfd0] p-7">
+                        <span class="block h-1.5 w-12 rounded-full bg-[#b08a1c]"></span>
+                        <h3 class="mt-5 font-display text-2xl font-bold text-[#7a5e0e]">Spread the word</h3>
+                        <p class="mt-2 leading-relaxed text-[#2b4541]">Share event updates with your community and help
+                            new devotees find the temple.</p>
+                        <a href="#signup" data-role="Spreading the word"
+                            class="pick mt-5 inline-block font-semibold text-[#7a5e0e] hover:underline">Choose this role
+                            →</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SIGN UP ================= -->
+    <section id="signup" class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="signTitle">
+        <div class="rounded-[28px] bg-[#00352f] text-[#f0ede4]">
+            <div
+                class="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-11 sm:py-24 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:px-12">
+                <div>
+                    <h2 id="signTitle"
+                        class="font-display text-[clamp(2.2rem,5vw,3.6rem)] font-bold leading-[1.02] tracking-[-.025em]">
+                        Sign up in three steps</h2>
+                    <ol class="mt-8 border-t border-white/10">
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">1</span>
+                            <p class="pt-1.5 text-lg">Choose the role you would like to help with.</p>
+                        </li>
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">2</span>
+                            <p class="pt-1.5 text-lg">Fill in the short form. It opens WhatsApp with your message ready.
+                            </p>
+                        </li>
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">3</span>
+                            <p class="pt-1.5 text-lg">We reply on WhatsApp and tell you when and where to come.</p>
+                        </li>
+                    </ol>
+                    <p class="mt-6 max-w-md leading-relaxed text-[#aac4be]">Questions first? Message us on <a
+                            href="https://wa.me/919616163432" target="_blank" rel="noopener"
+                            class="text-sun underline underline-offset-4">+91 96161 63432</a> or use the <a
+                            href="contact.html" class="text-sun underline underline-offset-4">contact page</a>.</p>
+                </div>
+
+                <form id="vform" class="rounded-[28px] border border-white/10 bg-[#003e37] p-6 sm:p-8" novalidate>
+                    <h3 class="font-display text-2xl font-bold">Volunteer sign-up</h3>
+                    <div class="mt-6 space-y-5">
+                        <div><label for="vn" class="mb-2 block text-[15px] font-medium">Your name</label><input id="vn"
+                                name="name" autocomplete="name" required placeholder="Your full name"
+                                class="w-full rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
+                        </div>
+                        <div><label for="vp" class="mb-2 block text-[15px] font-medium">Phone number</label><input
+                                id="vp" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
+                                placeholder="Your WhatsApp number"
+                                class="w-full rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
+                        </div>
+                        <div><label for="vr" class="mb-2 block text-[15px] font-medium">How would you like to
+                                help?</label>
+                            <div class="relative"><select id="vr" name="role"
+                                    class="w-full appearance-none rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 pr-12 text-base text-[#f0ede4] focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
+                                    <option>Prayer seva</option>
+                                    <option>Festivals and events</option>
+                                    <option>Cleanliness and upkeep</option>
+                                    <option>Welcoming visitors</option>
+                                    <option>Photos and video</option>
+                                    <option>Spreading the word</option>
+                                    <option>Anywhere I am needed</option>
+                                </select>
+                                <svg viewBox="0 0 24 24"
+                                    class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2"
+                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div><label for="va" class="mb-2 block text-[15px] font-medium">When are you free?</label>
+                            <div class="relative"><select id="va" name="when"
+                                    class="w-full appearance-none rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 pr-12 text-base text-[#f0ede4] focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
+                                    <option>Weekends</option>
+                                    <option>Weekdays</option>
+                                    <option>Festival days only</option>
+                                    <option>Flexible</option>
+                                </select>
+                                <svg viewBox="0 0 24 24"
+                                    class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2"
+                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div><label for="vm" class="mb-2 block text-[15px] font-medium">Anything else? <span
+                                    class="text-[#9dbab4]">(optional)</span></label><textarea id="vm" name="message"
+                                rows="3" placeholder="Skills, experience, or a question."
+                                class="w-full resize-y rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="mt-6 flex w-full items-center justify-between rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]"><span
+                            class="flex-1 text-center">Send on WhatsApp</span><span
+                            class="grid h-12 w-12 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span></button>
+                    <p id="vmsg" class="mt-4 text-[15px] leading-relaxed text-[#9dbab4]" role="status">This opens
+                        WhatsApp with your message ready to send. We never share your details.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="p-2 pt-0 sm:p-3 sm:pt-0">
+        <div class="relative overflow-hidden rounded-[28px] bg-[#002b27] text-[#f0ede4]">
+            <div class="relative z-10 mx-auto max-w-6xl px-8 pt-14 sm:px-11 lg:px-12 sm:pt-20">
+                <div class="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4">
+                    <div>
+                        <a href="index.html" class="flex items-center gap-2.5 font-display"
+                            aria-label="Shri Pauhari Baba Temple, home">
+                            <span class="grid h-10 w-10 place-items-center rounded-xl bg-sun text-ink"><svg
+                                    viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 2l1 2.4c1.4.4 2.4 1.7 2.4 3.2 0 .6-.2 1.2-.5 1.7l2.6 1.3-.5 1.4H16l1 2.5H7l1-2.5h-.5L7 11.6l2.6-1.3c-.3-.5-.5-1.1-.5-1.7 0-1.5 1-2.8 2.4-3.2z" />
+                                    <path d="M4 16h16v2H4zM2 19h20v2H2z" />
+                                </svg></span>
+                            <span class="text-2xl font-bold">Pauhari Baba</span>
+                        </a>
+                        <p class="mt-5 max-w-xs leading-relaxed text-[#9dbab4]">A peaceful place of prayer in Saraiya
+                            Ratnave, Azamgarh. Open to every devotee.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Explore</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="about.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">About
+                                    us</a></li>
+                            <li><a href="gallery.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Gallery</a>
+                            </li>
+                            <li><a href="contribute.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Contribute</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Company</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="plan-a-visit.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Plan
+                                    a visit</a></li>
+                            <li><a href="volunteer.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Volunteer</a>
+                            </li>
+                            <li><a href="privacy.html"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-semibold uppercase tracking-[.14em] text-[#c5d6b6]">Talk to us</h2>
+                        <ul class="mt-4 space-y-1">
+                            <li><a href="https://wa.me/919616163432"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">WhatsApp</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100033850125964"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">Facebook</a></li>
+                            <li><a href="https://instagram.com/shri_baba_pouhari"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/c/ShriPauhariBaba"
+                                    class="inline-block py-2 text-[17px] text-[#f0ede4] transition hover:text-sun"
+                                    target="_blank" rel="noopener">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="mt-14 flex flex-col gap-2 border-t border-white/10 pt-6 text-[15px] text-[#9dbab4] sm:flex-row sm:justify-between">
+                    <p>© <span id="yr">2026</span> Shri Pauhari Baba Temple. All rights reserved.</p>
+                    <p>Open daily, 6 AM to 8 PM</p>
+                </div>
+            </div>
+            <p aria-hidden="true"
+                class="pointer-events-none mt-6 select-none whitespace-nowrap text-center font-display text-[clamp(3.2rem,14.5vw,13rem)] font-bold leading-[.8] tracking-[-.04em] text-white/[.06] translate-y-[14%]">
+                Pauhari Baba</p>
+        </div>
+    </footer>
+
+    <script>
+        const $ = id => document.getElementById(id);
+        $('yr').textContent = new Date().getFullYear();
+
+        /* ---------- "Choose this role" fills the form ---------- */
+        document.querySelectorAll('.pick').forEach(a => a.addEventListener('click', () => { $('vr').value = a.dataset.role }));
+
+        /* ---------- Volunteer form -> WhatsApp ---------- */
+        const WA = '919616163432', vf = $('vform'), vmsg = $('vmsg');
+        vf.addEventListener('submit', e => {
+            e.preventDefault();
+            const f = new FormData(vf), n = f.get('name').trim(), p = f.get('phone').trim(), m = f.get('message').trim();
+            if (!n || !p) { vmsg.textContent = 'Please fill in your name and phone number.'; vmsg.className = 'mt-4 text-[15px] leading-relaxed text-[#ffb4a2]'; return }
+            const t = `Hello, I am ${n}. I would like to volunteer.\nRole: ${f.get('role')}\nFree: ${f.get('when')}\n${m ? m + '\n' : ''}Phone: ${p}`;
+            open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`, '_blank', 'noopener');
+            vmsg.textContent = 'Thank you. WhatsApp should now be open with your message.'; vmsg.className = 'mt-4 text-[15px] leading-relaxed text-sun'; vf.reset()
+        });
+    </script>
+</body>
+
+</html>
