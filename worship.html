@@ -17,14 +17,6 @@
         tailwind.config = { theme: { extend: { fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Hanken Grotesk"', 'sans-serif'], deva: ['"Tiro Devanagari Hindi"', 'serif'] }, colors: { ink: '#0a2b27', pill: '#00302c', sun: '#f9c85f', brand: '#004741', cream: '#f0ede4' } } } }
     </script>
     <style>
-        
-
-        
-
-        
-
-        
-
         .verse {
             white-space: pre-line
         }
@@ -104,15 +96,17 @@
                         Both are by Goswami Tulsidas.</p>
                 </div>
 
-                <div class="mx-auto mt-8 flex w-full max-w-sm rounded-full bg-[#e3dfd0] p-1.5" role="tablist"
-                    aria-label="Choose a prayer">
+
+                <div class="mx-auto mt-8 flex w-full max-w-[18rem] rounded-full bg-[#e3dfd0] p-1 sm:max-w-sm sm:p-1.5"
+                    role="tablist" aria-label="Choose a prayer">
                     <button id="tabMorning" type="button" role="tab" aria-controls="panelMorning" aria-selected="true"
-                        class="tab flex-1 rounded-full px-5 py-3 text-lg font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-sun">Morning
+                        class="tab flex-1 whitespace-nowrap rounded-full px-2 py-2 text-[15px] font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-sun sm:px-5 sm:py-3 sm:text-lg">Morning
                         prayer</button>
                     <button id="tabEvening" type="button" role="tab" aria-controls="panelEvening" aria-selected="false"
-                        class="tab flex-1 rounded-full px-5 py-3 text-lg font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-sun">Evening
+                        class="tab flex-1 whitespace-nowrap rounded-full px-2 py-2 text-[15px] font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-sun sm:px-5 sm:py-3 sm:text-lg">Evening
                         prayer</button>
                 </div>
+
 
                 <!-- Morning -->
                 <article id="panelMorning" role="tabpanel" aria-labelledby="tabMorning" lang="hi"
