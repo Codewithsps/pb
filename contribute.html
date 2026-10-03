@@ -16,7 +16,7 @@
     <script>
         tailwind.config = { theme: { extend: { fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Hanken Grotesk"', 'sans-serif'] }, colors: { ink: '#0a2b27', pill: '#00302c', sun: '#f9c85f', brand: '#004741', cream: '#f0ede4' } } } }
     </script>
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -108,9 +108,9 @@
                         <h3 class="mt-5 font-display text-[1.5rem] font-bold leading-tight text-[#004741]">Donation</h3>
                         <p class="mt-3 text-[17px] leading-relaxed text-[#2b4541]">Offer a donation towards the temple
                             and its daily worship.</p>
-                        <a href="https://wa.me/918858732885?text=Hello%2C%20I%20would%20like%20to%20make%20a%20donation%20to%20Shri%20Pauhari%20Baba%20Temple."
-                            target="_blank" rel="noopener"
-                            class="mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Donate<span
+                        <a href="#contribute-now" data-way="Donation"
+                            data-msg="Hello, I would like to make a donation to Shri Pauhari Baba Temple."
+                            class="pick mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Donate<span
                                 class="grid h-8 w-8 place-items-center rounded-full bg-sun text-ink"
                                 aria-hidden="true">→</span></a>
                     </div>
@@ -127,9 +127,9 @@
                         </h3>
                         <p class="mt-3 text-[17px] leading-relaxed text-[#2b4541]">Take part in the bhandara and serve
                             food to devotees.</p>
-                        <a href="https://wa.me/918858732885?text=Hello%2C%20I%20would%20like%20to%20take%20part%20in%20the%20bhandara%20seva%20at%20Shri%20Pauhari%20Baba%20Temple."
-                            target="_blank" rel="noopener"
-                            class="mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Join
+                        <a href="#contribute-now" data-way="Bhandara seva"
+                            data-msg="Hello, I would like to take part in the bhandara seva at Shri Pauhari Baba Temple."
+                            class="pick mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Join
                             the seva<span class="grid h-8 w-8 place-items-center rounded-full bg-sun text-ink"
                                 aria-hidden="true">→</span></a>
                     </div>
@@ -146,9 +146,9 @@
                         </h3>
                         <p class="mt-3 text-[17px] leading-relaxed text-[#2b4541]">Help the whole community celebrate
                             festivals at the temple.</p>
-                        <a href="https://wa.me/918858732885?text=Hello%2C%20I%20would%20like%20to%20contribute%20to%20a%20festival%20at%20Shri%20Pauhari%20Baba%20Temple."
-                            target="_blank" rel="noopener"
-                            class="mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Contribute<span
+                        <a href="#contribute-now" data-way="Festivals"
+                            data-msg="Hello, I would like to contribute to a festival at Shri Pauhari Baba Temple."
+                            class="pick mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Contribute<span
                                 class="grid h-8 w-8 place-items-center rounded-full bg-sun text-ink"
                                 aria-hidden="true">→</span></a>
                     </div>
@@ -166,9 +166,9 @@
                         </h3>
                         <p class="mt-3 text-[17px] leading-relaxed text-[#2b4541]">Give your time and help with the
                             temple's daily work and events.</p>
-                        <a href="https://wa.me/918858732885?text=Hello%2C%20I%20would%20like%20to%20volunteer%20at%20Shri%20Pauhari%20Baba%20Temple."
-                            target="_blank" rel="noopener"
-                            class="mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Volunteer<span
+                        <a href="#contribute-now" data-way="Volunteering"
+                            data-msg="Hello, I would like to volunteer at Shri Pauhari Baba Temple."
+                            class="pick mt-auto inline-flex items-center justify-center gap-2.5 pt-6 font-semibold text-[#004741]">Volunteer<span
                                 class="grid h-8 w-8 place-items-center rounded-full bg-sun text-ink"
                                 aria-hidden="true">→</span></a>
                     </div>
@@ -178,45 +178,42 @@
     </section>
 
     <!-- ================= HOW IT WORKS ================= -->
-    <section class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="howTitle">
-        <div class="rounded-[28px] bg-[#00322d] text-[#f0ede4]">
-            <div class="mx-auto max-w-6xl px-8 py-16 sm:px-11 lg:px-12 sm:py-24">
-                <div class="mx-auto max-w-2xl text-center">
+    <section id="contribute-now" class="p-2 pt-0 sm:p-3 sm:pt-0" aria-labelledby="howTitle">
+        <div class="rounded-[28px] bg-[#00352f] text-[#f0ede4]">
+            <div
+                class="mx-auto grid max-w-6xl gap-12 px-5 py-14 sm:px-11 sm:py-24 lg:grid-cols-[1fr_1.05fr] lg:gap-16 lg:px-12">
+                <div>
                     <h2 id="howTitle"
                         class="font-display text-[clamp(2.2rem,5vw,3.6rem)] font-bold leading-[1.02] tracking-[-.025em]">
-                        How to contribute</h2>
-                    <p class="mt-4 text-lg leading-relaxed text-[#b4cdc6]">It only takes a message.</p>
+                        Contribute in three steps</h2>
+                    <ol class="mt-8 border-t border-white/10">
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">1</span>
+                            <p class="pt-1.5 text-lg">Choose how you would like to contribute.</p>
+                        </li>
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">2</span>
+                            <p class="pt-1.5 text-lg">Press the WhatsApp button. Your message is ready to send.</p>
+                        </li>
+                        <li class="flex gap-4 border-b border-white/10 py-5"><span
+                                class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">3</span>
+                            <p class="pt-1.5 text-lg">We reply on WhatsApp with the details.</p>
+                        </li>
+                    </ol>
                 </div>
-                <ol class="mt-12 grid gap-6 md:grid-cols-3">
-                    <li class="rounded-3xl border border-white/10 bg-white/[.04] p-7">
-                        <span
-                            class="grid h-11 w-11 place-items-center rounded-full bg-sun font-display text-xl font-bold text-ink">1</span>
-                        <h3 class="mt-5 font-display text-2xl font-bold">Message us</h3>
-                        <p class="mt-2 text-[17px] leading-relaxed text-[#b4cdc6]">Tell us on WhatsApp how you would
-                            like to contribute.</p>
-                    </li>
-                    <li class="rounded-3xl border border-white/10 bg-white/[.04] p-7">
-                        <span
-                            class="grid h-11 w-11 place-items-center rounded-full bg-sun font-display text-xl font-bold text-ink">2</span>
-                        <h3 class="mt-5 font-display text-2xl font-bold">We reply</h3>
-                        <p class="mt-2 text-[17px] leading-relaxed text-[#b4cdc6]">We will reply on WhatsApp as soon as
-                            we can with the details.</p>
-                    </li>
-                    <li class="rounded-3xl border border-white/10 bg-white/[.04] p-7">
-                        <span
-                            class="grid h-11 w-11 place-items-center rounded-full bg-sun font-display text-xl font-bold text-ink">3</span>
-                        <h3 class="mt-5 font-display text-2xl font-bold">Offer your seva</h3>
-                        <p class="mt-2 text-[17px] leading-relaxed text-[#b4cdc6]">Complete your contribution and
-                            receive the temple's blessings.</p>
-                    </li>
-                </ol>
-                <div class="mt-12 text-center">
-                    <a href="https://wa.me/918858732885" target="_blank" rel="noopener"
-                        class="inline-flex items-center gap-3 rounded-full bg-sun py-1 pl-7 pr-1 font-semibold text-ink transition hover:bg-[#ffd873]">Message
-                        on WhatsApp<span
-                            class="grid h-10 w-10 place-items-center rounded-full bg-[#fff6dc] text-lg">→</span></a>
-                    <!-- <p class="mt-4 text-[15px] text-[#b4cdc6]">Prefer to write a longer note? Use our <a
-                            href="contact.html" class="text-sun underline underline-offset-4">contact page</a>.</p> -->
+                <div class="rounded-[28px] border border-white/10 bg-[#003e37] p-6 sm:p-8">
+                    <h3 class="font-display text-2xl font-bold">Contribute on WhatsApp</h3>
+                    <p class="mt-5 text-sm font-medium uppercase tracking-[.12em] text-[#9dbab4]">Your chosen way</p>
+                    <p id="wayName" class="mt-1 font-display text-2xl font-bold text-sun">Any way I can help</p>
+                    <p class="mt-4 leading-relaxed text-[#aac4be]">To change it, press a button on a card above. Then
+                        press the button below. WhatsApp opens with your message ready. Add your name and send.</p>
+                    <a id="cwa" href="#" target="_blank" rel="noopener"
+                        class="mt-6 flex w-full items-center justify-between rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]"><span
+                            class="flex-1 text-center">Send on WhatsApp</span><span
+                            class="grid h-12 w-12 place-items-center rounded-full bg-[#fff6dc] text-xl"
+                            aria-hidden="true">→</span></a>
+                    <p class="mt-4 text-[15px] leading-relaxed text-[#9dbab4]">This opens WhatsApp with your message
+                        ready to send. We never share your details.</p>
                 </div>
             </div>
         </div>
@@ -302,6 +299,12 @@
     <script>
         const $ = id => document.getElementById(id);
         $('yr').textContent = new Date().getFullYear();
+
+        /* ---------- "Choose" updates the WhatsApp message ---------- */
+        const WA = '918858732885', wayEl = $('wayName'), wa = $('cwa');
+        const setWay = (w, m) => { wayEl.textContent = w; wa.href = `https://wa.me/${WA}?text=${encodeURIComponent(m + '\nMy name: ')}` };
+        setWay('Any way I can help', 'Hello, I would like to contribute to Shri Pauhari Baba Temple.');
+        document.querySelectorAll('.pick').forEach(a => a.addEventListener('click', () => setWay(a.dataset.way, a.dataset.msg)));
     </script>
 </body>
 
