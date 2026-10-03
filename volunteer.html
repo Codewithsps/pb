@@ -17,14 +17,6 @@
         tailwind.config = { theme: { extend: { fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Hanken Grotesk"', 'sans-serif'] }, colors: { ink: '#0a2b27', pill: '#00302c', sun: '#f9c85f', brand: '#004741', cream: '#f0ede4' } } } }
     </script>
     <style>
-        
-
-        
-
-        
-
-        
-
         select option {
             color: #0a2b27
         }
@@ -88,10 +80,7 @@
                 <p class="rise mt-5 max-w-lg text-base leading-relaxed text-white/85 sm:text-lg"
                     style="animation-delay:.4s">Whether you have an hour a week or only come for festivals, there is a
                     way to help. Pick a role below and tell us on WhatsApp.</p>
-                <a href="#signup"
-                    class="rise mt-8 inline-flex items-center gap-3 rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]"
-                    style="animation-delay:.55s">Sign up to volunteer<span
-                        class="grid h-11 w-11 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span></a>
+
             </div>
         </section>
     </main>
@@ -183,7 +172,7 @@
                         </li>
                         <li class="flex gap-4 border-b border-white/10 py-5"><span
                                 class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sun font-display font-bold text-ink">2</span>
-                            <p class="pt-1.5 text-lg">Fill in the short form. It opens WhatsApp with your message ready.
+                            <p class="pt-1.5 text-lg">Press the WhatsApp button. Your message is ready to send.
                             </p>
                         </li>
                         <li class="flex gap-4 border-b border-white/10 py-5"><span
@@ -191,71 +180,24 @@
                             <p class="pt-1.5 text-lg">We reply on WhatsApp and tell you when and where to come.</p>
                         </li>
                     </ol>
-                    <p class="mt-6 max-w-md leading-relaxed text-[#aac4be]">Questions first? Message us on <a
-                            href="https://wa.me/919616163432" target="_blank" rel="noopener"
-                            class="text-sun underline underline-offset-4">+91 96161 63432</a> or use the <a
-                            href="contact.html" class="text-sun underline underline-offset-4">contact page</a>.</p>
+
                 </div>
 
-                <form id="vform" class="rounded-[28px] border border-white/10 bg-[#003e37] p-6 sm:p-8" novalidate>
-                    <h3 class="font-display text-2xl font-bold">Volunteer sign-up</h3>
-                    <div class="mt-6 space-y-5">
-                        <div><label for="vn" class="mb-2 block text-[15px] font-medium">Your name</label><input id="vn"
-                                name="name" autocomplete="name" required placeholder="Your full name"
-                                class="w-full rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
-                        </div>
-                        <div><label for="vp" class="mb-2 block text-[15px] font-medium">Phone number</label><input
-                                id="vp" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
-                                placeholder="Your WhatsApp number"
-                                class="w-full rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
-                        </div>
-                        <div><label for="vr" class="mb-2 block text-[15px] font-medium">How would you like to
-                                help?</label>
-                            <div class="relative"><select id="vr" name="role"
-                                    class="w-full appearance-none rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 pr-12 text-base text-[#f0ede4] focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
-                                    <option>Prayer seva</option>
-                                    <option>Festivals and events</option>
-                                    <option>Cleanliness and upkeep</option>
-                                    <option>Welcoming visitors</option>
-                                    <option>Photos and video</option>
-                                    <option>Spreading the word</option>
-                                    <option>Anywhere I am needed</option>
-                                </select>
-                                <svg viewBox="0 0 24 24"
-                                    class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2"
-                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M6 9l6 6 6-6" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div><label for="va" class="mb-2 block text-[15px] font-medium">When are you free?</label>
-                            <div class="relative"><select id="va" name="when"
-                                    class="w-full appearance-none rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 pr-12 text-base text-[#f0ede4] focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40">
-                                    <option>Weekends</option>
-                                    <option>Weekdays</option>
-                                    <option>Festival days only</option>
-                                    <option>Flexible</option>
-                                </select>
-                                <svg viewBox="0 0 24 24"
-                                    class="pointer-events-none absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2"
-                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M6 9l6 6 6-6" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div><label for="vm" class="mb-2 block text-[15px] font-medium">Anything else? <span
-                                    class="text-[#9dbab4]">(optional)</span></label><textarea id="vm" name="message"
-                                rows="3" placeholder="Skills, experience, or a question."
-                                class="w-full resize-y rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3.5 text-base text-[#f0ede4] placeholder:text-white/35 focus:border-sun focus:outline-none focus:ring-2 focus:ring-sun/40"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit"
+                <div class="rounded-[28px] border border-white/10 bg-[#003e37] p-6 sm:p-8">
+                    <h3 class="font-display text-2xl font-bold">Sign up on WhatsApp</h3>
+                    <p class="mt-5 text-sm font-medium uppercase tracking-[.12em] text-[#9dbab4]">Your chosen role</p>
+                    <p id="roleName" class="mt-1 font-display text-2xl font-bold text-sun">Anywhere I am needed</p>
+                    <p class="mt-4 leading-relaxed text-[#aac4be]">To change it, press "Choose this role" on a card
+                        above. Then press the button below. WhatsApp opens with your message ready. Add your name and
+                        when you are free, and send.</p>
+                    <a id="vwa" href="#" target="_blank" rel="noopener"
                         class="mt-6 flex w-full items-center justify-between rounded-full bg-sun py-1.5 pl-8 pr-1.5 text-lg font-semibold text-ink transition hover:bg-[#ffd873]"><span
                             class="flex-1 text-center">Send on WhatsApp</span><span
-                            class="grid h-12 w-12 place-items-center rounded-full bg-[#fff6dc] text-xl">→</span></button>
-                    <p id="vmsg" class="mt-4 text-[15px] leading-relaxed text-[#9dbab4]" role="status">This opens
-                        WhatsApp with your message ready to send. We never share your details.</p>
-                </form>
+                            class="grid h-12 w-12 place-items-center rounded-full bg-[#fff6dc] text-xl"
+                            aria-hidden="true">→</span></a>
+                    <p class="mt-4 text-[15px] leading-relaxed text-[#9dbab4]">This opens WhatsApp with your message
+                        ready to send. We never share your details.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -340,20 +282,15 @@
     <script>
         const $ = id => document.getElementById(id);
         $('yr').textContent = new Date().getFullYear();
-
-        /* ---------- "Choose this role" fills the form ---------- */
-        document.querySelectorAll('.pick').forEach(a => a.addEventListener('click', () => { $('vr').value = a.dataset.role }));
-
-        /* ---------- Volunteer form -> WhatsApp ---------- */
-        const WA = '919616163432', vf = $('vform'), vmsg = $('vmsg');
-        vf.addEventListener('submit', e => {
-            e.preventDefault();
-            const f = new FormData(vf), n = f.get('name').trim(), p = f.get('phone').trim(), m = f.get('message').trim();
-            if (!n || !p) { vmsg.textContent = 'Please fill in your name and phone number.'; vmsg.className = 'mt-4 text-[15px] leading-relaxed text-[#ffb4a2]'; return }
-            const t = `Hello, I am ${n}. I would like to volunteer.\nRole: ${f.get('role')}\nFree: ${f.get('when')}\n${m ? m + '\n' : ''}Phone: ${p}`;
-            open(`https://wa.me/${WA}?text=${encodeURIComponent(t)}`, '_blank', 'noopener');
-            vmsg.textContent = 'Thank you. WhatsApp should now be open with your message.'; vmsg.className = 'mt-4 text-[15px] leading-relaxed text-sun'; vf.reset()
-        });
+        /* ---------- "Choose this role" updates the WhatsApp message ---------- */
+        const WA = '919616163432', roleEl = $('roleName'), wa = $('vwa');
+        const setRole = r => {
+            roleEl.textContent = r; wa.href = `https://wa.me/${WA}?text=${encodeURIComponent(`Hello, I would like to volunteer at Shri Pauhari Baba Temple.
+Role: ${r}
+My name: `)}`
+        };
+        setRole('Anywhere I am needed');
+        document.querySelectorAll('.pick').forEach(a => a.addEventListener('click', () => setRole(a.dataset.role)));
     </script>
 </body>
 
